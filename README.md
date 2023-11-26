@@ -22,3 +22,14 @@ Welcome to Showcase Exact Change! This simple application takes any amount of mo
   - 3 x quarters
   - 2 x dimes
   - 4 x pennies
+
+Conditions
+Programming Language:
+
+Python
+Integrated Development Environment (IDE):
+
+PyCharm
+User Input Collection:
+
+User input can be collected through any means - UI, file, terminal, etc.
