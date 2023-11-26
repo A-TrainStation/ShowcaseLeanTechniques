@@ -33,3 +33,56 @@ PyCharm
 User Input Collection:
 
 User input can be collected through any means - UI, file, terminal, etc.
+
+I also like this program because you ask the user to enter any amount of change
+The output will have the CORRECT change back in the form of Bills and Coins. 
+
+# Showcase Exact Change
+
+Welcome to Showcase Exact Change! This simple Python program calculates the minimum number of bills and coins needed to represent a given amount of money.
+
+## How It Works
+
+The program runs in a loop, allowing the user to input an amount, calculate the change, and display the minimum number of bills and coins required. The user can choose to try again or exit the program.
+
+## Getting Started
+
+### Prerequisites
+
+- Python installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/showcase-exact-change.git
+    cd showcase-exact-change
+    ```
+
+2. Run the program:
+
+    ```bash
+    python exact_change.py
+    ```
+
+## Usage
+
+1. Enter the amount of money when prompted (with up to two decimal places).
+
+2. The program will display the minimum number of bills and coins needed to represent that amount.
+
+3. You will be asked if you want to try again. Respond with 'yes' to input another amount or 'no' to exit the program.
+
+## Example
+
+Suppose you input $49.99. The program might output:
+
+```plaintext
+4 - $10 bill
+2 - $5 bill
+4 - $1 bill
+3 - quarters
+2 - dimes
+4 - pennies
+
