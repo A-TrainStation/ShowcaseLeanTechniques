@@ -1,28 +1,23 @@
-# ShowcaseLeanTechniques
-Internship showcase, for Lean Techniques. The game is Money counting, yippee! The user must enter any amount of money with 2 decimal places. Then the change must come back as the lowest amount  back.
-# Showcase Exact Change
+Exact Change Calculator
+Welcome to the Exact Change Calculator! This simple yet powerful application allows users to input any amount of money and receive the optimal combination of US currency units as change. Whether you're dealing with dollars and cents in your pocket or need to make change at a cash register, this tool has got you covered.
 
-Welcome to Showcase Exact Change! This simple application takes any amount of money as input and responds with the minimum number of US currency units needed to represent that amount.
+Getting Started
+Prerequisites
+Before you begin, make sure you have Python installed on your machine.
 
-## Must-Haves
+Usage
+Input any amount of money (with up to two decimal places).
+The application will respond with the minimum combination of US currency units as change.
+Example
+Input: $19.99
 
-- **User Input:**
-  - Users can input any amount of money with up to two decimal places.
-
-- **Change Calculation:**
-  - The application will respond with the amount in units of US currency with the least amount of change given.
-
-  **Example:**
-  ```plaintext
-  Input: $19.99
-  Output:
-  - 1 x $10 bill
-  - 1 x $5 bill
-  - 4 x $1 bill
-  - 3 x quarters
-  - 2 x dimes
-  - 4 x pennies
-
+Output:
+- 1 - $10 bill
+- 1 - $5 bill
+- 4 - $1 bill
+- 3 - quarters
+- 2 - dimes
+- 4 - pennies
 Conditions
 Programming Language:
 
@@ -36,8 +31,6 @@ User input can be collected through any means - UI, file, terminal, etc.
 
 I also like this program because you ask the user to enter any amount of change
 The output will have the CORRECT change back in the form of Bills and Coins. 
-
-# Showcase Exact Change
 
 Welcome to Showcase Exact Change! This simple Python program calculates the minimum number of bills and coins needed to represent a given amount of money.
 
@@ -66,25 +59,6 @@ The program runs in a loop, allowing the user to input an amount, calculate the 
     python exact_change.py
     ```
 
-## Usage
-
-1. Enter the amount of money when prompted (with up to two decimal places).
-
-2. The program will display the minimum number of bills and coins needed to represent that amount.
-
-3. You will be asked if you want to try again. Respond with 'yes' to input another amount or 'no' to exit the program.
-
-## Example
-
-Suppose you input $49.99. The program might output:
-
-```plaintext
-4 - $10 bill
-2 - $5 bill
-4 - $1 bill
-3 - quarters
-2 - dimes
-4 - pennies
 
 // PROGRAMMING LANGUAGE */
 # I attached my PY file to the link and this will give you access to dive into my program and it will state for the user to enter any amount of money
