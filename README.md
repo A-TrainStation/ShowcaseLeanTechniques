@@ -1,6 +1,6 @@
 Exact Change Calculator
 
-Welcome to the Exact Change Calculator! This simple yet powerful application allows users to input any amount of money and receive the optimal combination of US currency units as change. Whether you're dealing with dollars and cents in your pocket or need to make change at a cash register, this tool has got you covered.
+Welcome to the Exact Change Calculator! This simple yet powerful application allows users to input any amount of money and receive the optimal combination of US currency units as change. Whether you're dealing with dollars and cents in your pocket or need to make change at a cash register, this program has got you covered.
 
 Getting Started
 Prerequisites
