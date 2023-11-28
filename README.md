@@ -65,8 +65,27 @@ The program runs in a loop, allowing the user to input an amount, calculate the 
 # I attached my PY file to the link and this will give you access to dive into my program and it will state for the user to enter any amount of money
 # I used Py charm community to do this program. 
 
-In addition, My program used a list, for currency units. I previously had only 10, 5, 1 dollar bills. Then, as I was thinking, if someone buys groceries over $100.00,
-and the user enters any amount, I had to change the ammount to fit the correct change back. 
+****// In addition, My program used a list, for currency units. I previously had only 10, 5, 1 dollar bills. Then, as I was thinking, if someone buys groceries over $100.00,
+and the user enters any amount, I had to change the ammount to fit the correct change back. ***///
+
+I noticed that whenever I entered an amount like $45.61. It would output the correct total change in bills which would be 
+4- $10 bills
+1- $5 bills
+However, when I got to the 61 cents, it was only printing out just 60 cents, instead of adding the extra penny. So I ended up actually creating an accumulator so that the 1 cent or in this case 1 penny would look like this
+        amount += 0.001
+So I iniilized that prior to using the for loop. 
+# Now to continue that entry of $45.61
+2 - $20 bill
+1 - $5 bill
+2 - 25 cents
+1 - 10 cents
+1 - 1 cent
+-------------------------------------------------
+Above here I did add 100, 50, 20 inside the array list, so I wouldn't have like 6 to 7 $10.00 dollar bills if the User enters $125.30.
+So instead of the 4 $10.00 dollar bills, the money count made sure to take 2 - $20 bill instead of having more bills than you needed. 
+
+I found that really helpful to add inside the array. 
+-----------------------------------------------------------------------
 
 ## Setup
 To set up and run the Exact Change Showcase app, follow these steps:
