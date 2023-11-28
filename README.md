@@ -72,8 +72,8 @@ I noticed that whenever I entered an amount like $45.61. It would output the cor
 4- $10 bills
 1- $5 bills
 However, when I got to the 61 cents, it was only printing out just 60 cents, instead of adding the extra penny. So I ended up actually creating an accumulator so that the 1 cent or in this case 1 penny would look like this
-        amount += 0.001
-So I iniilized that prior to using the for loop. 
+        (amount += 0.001)
+So I initialized that prior to using the for loop. 
 # Now to continue that entry of $45.61
 2 - $20 bill
 1 - $5 bill
