@@ -33,7 +33,7 @@ User input can be collected through any means - UI, file, terminal, etc.
 I also like this program because you ask the user to enter any amount of change
 The output will have the CORRECT change back in the form of Bills and Coins. 
 
-Welcome to Showcase Exact Change! This simple Python program calculates the minimum number of bills and coins needed to represent a given amount of money.
+This simple Python program calculates the minimum number of bills and coins needed to represent a given amount of money.
 
 ## How It Works
 
@@ -63,7 +63,10 @@ The program runs in a loop, allowing the user to input an amount, calculate the 
 
 // PROGRAMMING LANGUAGE */
 # I attached my PY file to the link and this will give you access to dive into my program and it will state for the user to enter any amount of money
-# I used Py charm community to do this program.
+# I used Py charm community to do this program. 
+
+In addition, My program used a list, for currency units. I previously had only 10, 5, 1 dollar bills. Then, as I was thinking, if someone buys groceries over $100.00,
+and the user enters any amount, I had to change the ammount to fit the correct change back. 
 
 ## Setup
 To set up and run the Exact Change Showcase app, follow these steps:
