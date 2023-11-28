@@ -65,4 +65,30 @@ The program runs in a loop, allowing the user to input an amount, calculate the 
 # I attached my PY file to the link and this will give you access to dive into my program and it will state for the user to enter any amount of money
 # I used Py charm community to do this program.
 
+## Setup
+To set up and run the Exact Change Showcase app, follow these steps:
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/exact-change-showcase.git
+   https://github.com/A-TrainStation/ShowcaseLeanTechniques
+
+Navigate to the project directory:
+    cd exact-change-showcase
+    
+2. Install dependencies:
+       npm install
+
+3. Run the application:
+       npm start
+4. Open your web browser and go to http://localhost: to access the application.
+
+Testing
+We have included some testing scenarios to ensure the proper functioning of the Exact Change Showcase app. To run the tests, use the following command:
+    
+    npm test
+
+Happy exact changing!
+
+
 
