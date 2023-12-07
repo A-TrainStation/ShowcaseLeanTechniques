@@ -109,6 +109,96 @@ Testing
 We have included some testing scenarios to ensure the proper functioning of the Exact Change Showcase app. To run the tests, use the following command:
     
     npm test
+Below this will be my steps 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Step 1
+I looked over the technical showcase assessment. I started generating ideas and comming up with which program I wanted to use.
+I chose Python because that was the language I am comfortable in. 
+**//As a side note I am currently studying Cobol, Java, Cloud Foundations, and Intro Database concept.
+I started to generate ideas and thougts on playing with the data by entering a random number and taking the different kinds of Dollar Bills,
+and different cents to make out exact change of what the user enters. 
+
+I also was tinkering with the idea on what happens if the user enters a number and it doesn't print out the correct data,
+oddly enough when I was configuring out the program in python, I had a scenario that I would enter a number and it would not 
+print out the correct change back. 
+
+Step 2.
+**// I decided to def the main 
+	def main()
+		While True:
+			input()
+			calcs()
+			output()
+		try_again = input("Do you want to try again? (yes/no): ").lower() 
+        if try_again != 'yes':
+            break
+			
+		This is essentially stating while this program is running true, then enter a number
+		Then it will ask the user do you want to try again? 
+		
+	With the Input data, I wanted to make sure the user could not enter just anything, for instance a string saying "HELLO".
+	When that happens, the program won't work unless the user enters any amount with 2 decimals. 
+	
+	**// BELOW here in the def main is basically saying if the users (input) is not equal to yes
+		Then it breaks and falls out of the loop. **//.
+		The if try_again != 'yes':
+			break 
+		
+
+Step 3
+**// def input()
+In the input we have is While True, I setup a try and except, Simply saying we ask the user to enter the amount of money up to 2 decimal places
+break except any Value error as e: and print enter a valid number. We can't have the user entering just anything like a string word, 
+so with the except value error, it forces the user to enter a valid number. The program will not work if you don't enter an amount with 2 decimal.
+	While True:
+		try:
+            amount = float(input("Enter the amount of money(with up to two decimal places: $ "))
+            break
+        except ValueError as e:
+            print("Please enter a valid number.")
+	return amount
+
+
+Step 4 
+//** The calculations. Here I decided to use an array list with each of the forms of dollar Bills and different cents.
+Like I previously, mentioned I was playing around with entering a number and writing out how the change should look like,
+as if the user enters any amount with 2 decimals. 
+
+Another way I previously had setup was doing a case structure, but when looking at the case structure, It was giving me grief and errors.
+Arrays made this program run not only functionally, but effieciently. 
+
+**// Inside the brackets are 
+100 bills
+50  bills
+20  bills
+10  bills
+5   bills
+
+0.25 cents   Quarters
+0.1  cents   Dimes
+0.05 cents   Nickles
+0.01 cents   Pennies
+
+I did numerous variations of entering numbers to get the program to have an error
+Sure enough it did and, Here I'll explain it. 
+
+
+	def calculate_Change(amount):
+    currency_units = [100, 50, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01]
+    change = {}
+
+    amount += 0.001
+
+    for unit in currency_units:
+        count = int(amount // unit)
+        if count > 0:
+            change[unit] = count
+            amount -= count * unit
+    return change
+
+Next we move to the for loop, which is for units in currency_units
+	I made up an variable called count and set it equal to (amount // unit)
+	  /** This line calculates how many times the current currency unit can fit into the remaining amount. **/
 
 Happy exact changing!
 
