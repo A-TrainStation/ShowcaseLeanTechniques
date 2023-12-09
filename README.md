@@ -111,7 +111,8 @@ We have included some testing scenarios to ensure the proper functioning of the 
     npm test
 Below this will be my steps 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Step 1
+# Step 1
+
 I looked over the technical showcase assessment. I started generating ideas and comming up with which program I wanted to use.
 I chose Python because that was the language I am comfortable in. 
 **//As a side note I am currently studying Cobol, Java, Cloud Foundations, and Intro Database concept.
@@ -122,7 +123,8 @@ I also was tinkering with the idea on what happens if the user enters a number a
 oddly enough when I was configuring out the program in python, I had a scenario that I would enter a number and it would not 
 print out the correct change back. 
 
-Step 2.
+# Step 2.
+
 **// I decided to def the main 
 	def main()
 		While True:
@@ -145,7 +147,8 @@ Step 2.
 			break 
 		
 
-Step 3
+# Step 3
+
 **// def input()
 In the input we have is While True, I setup a try and except, Simply saying we ask the user to enter the amount of money up to 2 decimal places
 break except any Value error as e: and print enter a valid number. We can't have the user entering just anything like a string word, 
@@ -159,7 +162,8 @@ so with the except value error, it forces the user to enter a valid number. The 
 	return amount
 
 
-Step 4 
+# Step 4 
+
 //** The calculations. Here I decided to use an array list with each of the forms of dollar Bills and different cents.
 Like I previously, mentioned I was playing around with entering a number and writing out how the change should look like,
 as if the user enters any amount with 2 decimals. 
@@ -208,10 +212,10 @@ If the currency unit is greater than or equal to 1 (implying it's a bill), it pr
 If the currency unit is less than 1 (implying it's a coin), it converts the unit to cents, 
 prints the count, and handles the pluralization of "cent" based on whether there's more than one cent.
 
-Step 5
-	We have the output function.
-	
 
+# Step 5
+
+We have the output function which will print out the correct change when the user enters any amount with up to 2 decimals.
 def output(change):
     for unit, count in change.items():
         if unit >= 1:
