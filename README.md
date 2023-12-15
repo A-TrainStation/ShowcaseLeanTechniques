@@ -230,13 +230,23 @@ prints the count, and handles the pluralization of "cent" based on whether there
 # Step 5
 
 We have the output function which will print out the correct change when the user enters any amount with up to 2 decimals.
-def output(change):
-    for unit, count in change.items():
-        if unit >= 1:
-            print(f"{count} - ${unit:.0f} bill")
-        else:
-            cents = int(unit * 100)
-            print(f"{count} - {cents} cent{'s' if cents > 1 else ''}")
+for unit, count in change.items()::
+
+# This is a loop that iterates over the key-value pairs in the change dictionary. unit represents the unit of currency (either a bill or a fraction of a dollar), and count represents the count of that unit.
+ if unit >= 1::
+	This condition checks if the unit is greater than or equal to 1. 
+	If true, it assumes that the unit is a bill, and it prints the count and the unit as a whole dollar bill.
+ 
+ print(f"{count} - ${unit:.0f} bill")
+
+ # The :.0f in {unit:.0f} ensures that the unit (which is assumed to be a dollar bill) is printed without any decimal places.
+	else::
+# If the unit is less than 1, it means it represents cents. The code converts the fraction of a dollar into cents by multiplying it by 100 and rounding to the nearest integer.
+ 	cents = int(unit * 100)
+
+# This line then prints the count and the unit as cents. The condition {cents > 1} checks if there is more than one cent, and it adds the plural "s" to "cent" accordingly.
+ print(f"{count} - {cents} cent{'s' if cents > 1 else ''}")
+ 
 
 // ** The function iterates over the items in the change dictionary.
 For each unit, it checks whether it's a bill (with a value greater than or equal to 1) or a coin (with a value less than 1).
