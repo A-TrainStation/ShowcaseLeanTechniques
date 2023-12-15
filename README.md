@@ -138,12 +138,14 @@ print out the correct change back.
 		This is essentially stating while this program is running true, then enter a number
 		Then it will ask the user do you want to try again? 
 		
-	With the Input data, I wanted to make sure the user could not enter just anything, for instance a string saying "HELLO".
-	When that happens, the program won't work unless the user enters any amount with 2 decimals. 
+With the Input data, I wanted to make sure the user could not enter just anything, 
+# for instance a string saying "HELLO".
+   
+When that happens, the program won't work unless the user enters any amount with 2 decimals. 
 	
-	**// BELOW here in the def main is basically saying if the users (input) is not equal to yes
-		Then it breaks and falls out of the loop. **//.
-		The if try_again != 'yes':
+**// BELOW here in the def main is basically saying if the users (input) is not equal to yes
+Then it breaks and falls out of the loop. **//.
+	The if try_again != 'yes':
 			break 
 		
 
@@ -153,6 +155,8 @@ print out the correct change back.
 In the input we have is While True, I setup a try and except, Simply saying we ask the user to enter the amount of money up to 2 decimal places
 break except any Value error as e: and print enter a valid number. We can't have the user entering just anything like a string word, 
 so with the except value error, it forces the user to enter a valid number. The program will not work if you don't enter an amount with 2 decimal.
+
+
 	While True:
 		try:
             amount = float(input("Enter the amount of money(with up to two decimal places: $ "))
