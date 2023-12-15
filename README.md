@@ -247,12 +247,10 @@ for unit, count in change.items()::
 # This line then prints the count and the unit as cents. The condition {cents > 1} checks if there is more than one cent, and it adds the plural "s" to "cent" accordingly.
  print(f"{count} - {cents} cent{'s' if cents > 1 else ''}")
  
-
 // ** The function iterates over the items in the change dictionary.
 For each unit, it checks whether it's a bill (with a value greater than or equal to 1) or a coin (with a value less than 1).
 If it's a bill, it prints the count and unit as a bill with a dollar sign and without any decimal places.
 If it's a coin, it converts the unit to cents, prints the count, and handles pluralization based on whether there's more than one cent.
-
 
 Happy exact changing!
 
