@@ -155,16 +155,17 @@ Then it breaks and falls out of the loop. **//.
 In the input we have is While True, I setup a try and except, Simply saying we ask the user to enter the amount of money up to 2 decimal places
 break except any Value error as e: and print enter a valid number. We can't have the user entering just anything like a string word, 
 so with the except value error, it forces the user to enter a valid number. The program will not work if you don't enter an amount with 2 decimal.
-
-
-	While True:
-		try:
+---------------------------------------------------------------------------------------------------------------------------------------------------
+# def input_Data():
+    while True:
+        try:
             amount = float(input("Enter the amount of money(with up to two decimal places: $ "))
             break
         except ValueError as e:
             print("Please enter a valid number.")
-	return amount
 
+    return amount
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Step 4 
 
