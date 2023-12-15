@@ -196,6 +196,9 @@ Sure enough it did and, Here I'll explain it.
     currency_units = [100, 50, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01]
     change = {}
 
+# The value 0.001 is one-tenth of a cent or one-tenth of a penny. In other words, it represents a very small fraction of a unit of currency. 
+# If you were working with dollars, for example, it would be equivalent to one-tenth of a cent ($0.001).
+
     amount += 0.001
 
     for unit in currency_units:
@@ -204,6 +207,12 @@ Sure enough it did and, Here I'll explain it.
             change[unit] = count
             amount -= count * unit
     return change
+
+# I Can clarify the amount += 0.001 here 
+	amount: This is presumably a variable that holds some numeric value (like a floating-point number).
+	+=: This is the "add and assign" operator. 
+# It adds the value on the right side of the operator to the current value of the variable on the left side and then assigns the result back to the variable.
+	0.001: This is the value being added to the amount variable. In this case, it's 0.001.
 
 Next we move to the for loop, which is for units in currency_units
 	I made up an variable called count and set it equal to (amount // unit)
